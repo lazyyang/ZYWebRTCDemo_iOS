@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A4F55D318ED5F7100AF3C63 /* libgflags.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4F55D218ED5F7100AF3C63 /* libgflags.a */; };
+		3A4F55D618ED5FCD00AF3C63 /* libgmock_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4F55D418ED5FCD00AF3C63 /* libgmock_main.a */; };
+		3A4F55D718ED5FCD00AF3C63 /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4F55D518ED5FCD00AF3C63 /* libgmock.a */; };
+		3A4F55DA18ED602A00AF3C63 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4F55D818ED602A00AF3C63 /* libgtest_main.a */; };
+		3A4F55DB18ED602A00AF3C63 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4F55D918ED602A00AF3C63 /* libgtest.a */; };
+		3AAB1BB618E50D8000613F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1BB518E50D8000613F3A /* Foundation.framework */; };
+		3AAB1BB818E50D8000613F3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1BB718E50D8000613F3A /* CoreGraphics.framework */; };
+		3AAB1BBA18E50D8000613F3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1BB918E50D8000613F3A /* UIKit.framework */; };
+		3AAB1BC018E50D8000613F3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AAB1BBE18E50D8000613F3A /* InfoPlist.strings */; };
+		3AAB1BC218E50D8000613F3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB1BC118E50D8000613F3A /* main.m */; };
+		3AAB1BC618E50D8000613F3A /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB1BC518E50D8000613F3A /* ZYAppDelegate.m */; };
+		3AAB1BC918E50D8000613F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAB1BC718E50D8000613F3A /* Main.storyboard */; };
+		3AAB1BCC18E50D8000613F3A /* ZYViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB1BCB18E50D8000613F3A /* ZYViewController.mm */; };
+		3AAB1BCE18E50D8000613F3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AAB1BCD18E50D8000613F3A /* Images.xcassets */; };
+		3AAB1BD518E50D8000613F3A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1BD418E50D8000613F3A /* XCTest.framework */; };
+		3AAB1BD618E50D8000613F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1BB518E50D8000613F3A /* Foundation.framework */; };
+		3AAB1BD718E50D8000613F3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1BB918E50D8000613F3A /* UIKit.framework */; };
+		3AAB1BDF18E50D8000613F3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AAB1BDD18E50D8000613F3A /* InfoPlist.strings */; };
+		3AAB1BE118E50D8000613F3A /* ZYWebRTCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAB1BE018E50D8000613F3A /* ZYWebRTCDemoTests.m */; };
+		3AAB1C8118E50E6E00613F3A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C8018E50E6E00613F3A /* AVFoundation.framework */; };
+		3AAB1C8318E50E7700613F3A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C8218E50E7700613F3A /* libstdc++.dylib */; };
+		3AAB1C8518E50E8000613F3A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C8418E50E8000613F3A /* libsqlite3.dylib */; };
+		3AAB1C8718E50E8800613F3A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C8618E50E8800613F3A /* CoreVideo.framework */; };
+		3AAB1C8918E50EA200613F3A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C8818E50EA200613F3A /* CoreMedia.framework */; };
+		3AAB1C8B18E50EAA00613F3A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C8A18E50EAA00613F3A /* CoreAudio.framework */; };
+		3AAB1C8D18E50EB300613F3A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C8C18E50EB300613F3A /* AudioToolbox.framework */; };
+		3AAB1C8F18E50EBE00613F3A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C8E18E50EBE00613F3A /* OpenGLES.framework */; };
+		3AAB1C9118E50ECE00613F3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C9018E50ECE00613F3A /* QuartzCore.framework */; };
+		3AAB1C9318E50ED600613F3A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C9218E50ED600613F3A /* CoreLocation.framework */; };
+		3AAB1C9518E50EDF00613F3A /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C9418E50EDF00613F3A /* libresolv.dylib */; };
+		3AAB1C9718E50EE500613F3A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C9618E50EE500613F3A /* libxml2.dylib */; };
+		3AAB1C9918E50EEE00613F3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C9818E50EEE00613F3A /* Security.framework */; };
+		3AAB1C9B18E50EF600613F3A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C9A18E50EF600613F3A /* SystemConfiguration.framework */; };
+		3AAB1C9D18E50F0000613F3A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C9C18E50F0000613F3A /* CFNetwork.framework */; };
+		3AAB1C9F18E50F0600613F3A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB1C9E18E50F0600613F3A /* CoreData.framework */; };
+		3ADA5CC418F54EAA009CD014 /* libjingle_peerconnection_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADA5CC318F54EAA009CD014 /* libjingle_peerconnection_objc.a */; };
+		3AF7512418ED5D2D00D56ED8 /* libchannel_transport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF7512318ED5D2D00D56ED8 /* libchannel_transport.a */; };
+		3AF7512618ED5D9A00D56ED8 /* libtest_support.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF7512518ED5D9A00D56ED8 /* libtest_support.a */; };
+		3AF7512818ED5DAF00D56ED8 /* libtest_support_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF7512718ED5DAF00D56ED8 /* libtest_support_main.a */; };
+		3AF81FE418EC07DE00541959 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF81FE318EC07DE00541959 /* libz.dylib */; };
+		DF48E4A318EC69C1005215F3 /* libacm2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46718EC69C0005215F3 /* libacm2.a */; };
+		DF48E4A418EC69C1005215F3 /* libaudio_coding_module.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46818EC69C0005215F3 /* libaudio_coding_module.a */; };
+		DF48E4A518EC69C1005215F3 /* libaudio_conference_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46918EC69C0005215F3 /* libaudio_conference_mixer.a */; };
+		DF48E4A618EC69C1005215F3 /* libaudio_device.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46A18EC69C0005215F3 /* libaudio_device.a */; };
+		DF48E4A718EC69C1005215F3 /* libaudio_processing_neon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46B18EC69C0005215F3 /* libaudio_processing_neon.a */; };
+		DF48E4A818EC69C1005215F3 /* libaudio_processing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46C18EC69C0005215F3 /* libaudio_processing.a */; };
+		DF48E4A918EC69C1005215F3 /* libbitrate_controller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46D18EC69C0005215F3 /* libbitrate_controller.a */; };
+		DF48E4AA18EC69C1005215F3 /* libCNG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46E18EC69C0005215F3 /* libCNG.a */; };
+		DF48E4AB18EC69C1005215F3 /* libcommon_audio_neon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E46F18EC69C0005215F3 /* libcommon_audio_neon.a */; };
+		DF48E4AC18EC69C1005215F3 /* libcommon_audio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47018EC69C0005215F3 /* libcommon_audio.a */; };
+		DF48E4AD18EC69C1005215F3 /* libcommon_video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47118EC69C0005215F3 /* libcommon_video.a */; };
+		DF48E4AE18EC69C1005215F3 /* libcrnspr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47218EC69C0005215F3 /* libcrnspr.a */; };
+		DF48E4AF18EC69C1005215F3 /* libcrnss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47318EC69C0005215F3 /* libcrnss.a */; };
+		DF48E4B018EC69C1005215F3 /* libcrnssckbi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47418EC69C0005215F3 /* libcrnssckbi.a */; };
+		DF48E4B118EC69C1005215F3 /* libcrssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47518EC69C0005215F3 /* libcrssl.a */; };
+		DF48E4B218EC69C1005215F3 /* libexpat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47618EC69C0005215F3 /* libexpat.a */; };
+		DF48E4B318EC69C1005215F3 /* libG711.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47718EC69C0005215F3 /* libG711.a */; };
+		DF48E4B418EC69C1005215F3 /* libG722.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47818EC69C0005215F3 /* libG722.a */; };
+		DF48E4B518EC69C1005215F3 /* libicudata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47918EC69C0005215F3 /* libicudata.a */; };
+		DF48E4B618EC69C1005215F3 /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47A18EC69C0005215F3 /* libicui18n.a */; };
+		DF48E4B718EC69C1005215F3 /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47B18EC69C0005215F3 /* libicuuc.a */; };
+		DF48E4B818EC69C1005215F3 /* libiLBC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47C18EC69C0005215F3 /* libiLBC.a */; };
+		DF48E4B918EC69C1005215F3 /* libisac_neon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47D18EC69C0005215F3 /* libisac_neon.a */; };
+		DF48E4BA18EC69C1005215F3 /* libiSAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47E18EC69C0005215F3 /* libiSAC.a */; };
+		DF48E4BB18EC69C1005215F3 /* libiSACFix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E47F18EC69C0005215F3 /* libiSACFix.a */; };
+		DF48E4BC18EC69C1005215F3 /* libjingle_media.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48018EC69C0005215F3 /* libjingle_media.a */; };
+		DF48E4BD18EC69C1005215F3 /* libjingle_p2p.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48118EC69C0005215F3 /* libjingle_p2p.a */; };
+		DF48E4BF18EC69C1005215F3 /* libjingle_peerconnection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48318EC69C0005215F3 /* libjingle_peerconnection.a */; };
+		DF48E4C018EC69C1005215F3 /* libjingle_sound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48418EC69C0005215F3 /* libjingle_sound.a */; };
+		DF48E4C118EC69C1005215F3 /* libjingle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48518EC69C0005215F3 /* libjingle.a */; };
+		DF48E4C218EC69C1005215F3 /* libjsoncpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48618EC69C0005215F3 /* libjsoncpp.a */; };
+		DF48E4C318EC69C1005215F3 /* libmedia_file.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48718EC69C0005215F3 /* libmedia_file.a */; };
+		DF48E4C418EC69C1005215F3 /* libNetEq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48818EC69C0005215F3 /* libNetEq.a */; };
+		DF48E4C518EC69C1005215F3 /* libNetEq4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48918EC69C0005215F3 /* libNetEq4.a */; };
+		DF48E4C618EC69C1005215F3 /* libnss_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48A18EC69C1005215F3 /* libnss_static.a */; };
+		DF48E4C718EC69C1005215F3 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48B18EC69C1005215F3 /* libopus.a */; };
+		DF48E4C818EC69C1005215F3 /* libpaced_sender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48C18EC69C1005215F3 /* libpaced_sender.a */; };
+		DF48E4C918EC69C1005215F3 /* libPCM16B.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48D18EC69C1005215F3 /* libPCM16B.a */; };
+		DF48E4CA18EC69C1005215F3 /* librbe_components.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48E18EC69C1005215F3 /* librbe_components.a */; };
+		DF48E4CB18EC69C1005215F3 /* libremote_bitrate_estimator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E48F18EC69C1005215F3 /* libremote_bitrate_estimator.a */; };
+		DF48E4CC18EC69C1005215F3 /* librtp_rtcp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49018EC69C1005215F3 /* librtp_rtcp.a */; };
+		DF48E4CD18EC69C1005215F3 /* libsqlite_regexp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49118EC69C1005215F3 /* libsqlite_regexp.a */; };
+		DF48E4CE18EC69C1005215F3 /* libsrtp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49218EC69C1005215F3 /* libsrtp.a */; };
+		DF48E4CF18EC69C1005215F3 /* libsystem_wrappers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49318EC69C1005215F3 /* libsystem_wrappers.a */; };
+		DF48E4D018EC69C1005215F3 /* libvideo_capture_module.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49418EC69C1005215F3 /* libvideo_capture_module.a */; };
+		DF48E4D118EC69C1005215F3 /* libvideo_coding_utility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49518EC69C1005215F3 /* libvideo_coding_utility.a */; };
+		DF48E4D218EC69C1005215F3 /* libvideo_engine_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49618EC69C1005215F3 /* libvideo_engine_core.a */; };
+		DF48E4D318EC69C1005215F3 /* libvideo_processing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49718EC69C1005215F3 /* libvideo_processing.a */; };
+		DF48E4D418EC69C1005215F3 /* libvideo_render_module.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49818EC69C1005215F3 /* libvideo_render_module.a */; };
+		DF48E4D518EC69C1005215F3 /* libvoice_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49918EC69C1005215F3 /* libvoice_engine.a */; };
+		DF48E4D618EC69C1005215F3 /* libvpx_asm_offsets_vp8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49A18EC69C1005215F3 /* libvpx_asm_offsets_vp8.a */; };
+		DF48E4D718EC69C1005215F3 /* libvpx_asm_offsets_vpx_scale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49B18EC69C1005215F3 /* libvpx_asm_offsets_vpx_scale.a */; };
+		DF48E4D818EC69C1005215F3 /* libvpx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49C18EC69C1005215F3 /* libvpx.a */; };
+		DF48E4D918EC69C1005215F3 /* libwebrtc_i420.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49D18EC69C1005215F3 /* libwebrtc_i420.a */; };
+		DF48E4DA18EC69C1005215F3 /* libwebrtc_opus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49E18EC69C1005215F3 /* libwebrtc_opus.a */; };
+		DF48E4DB18EC69C1005215F3 /* libwebrtc_utility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E49F18EC69C1005215F3 /* libwebrtc_utility.a */; };
+		DF48E4DC18EC69C1005215F3 /* libwebrtc_video_coding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E4A018EC69C1005215F3 /* libwebrtc_video_coding.a */; };
+		DF48E4DD18EC69C1005215F3 /* libwebrtc_vp8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E4A118EC69C1005215F3 /* libwebrtc_vp8.a */; };
+		DF48E4DE18EC69C1005215F3 /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF48E4A218EC69C1005215F3 /* libyuv.a */; };
+		DFB74AF818F902A4005ECF4C /* webrtc_native_api.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFB74AF618F902A4005ECF4C /* webrtc_native_api.mm */; };
+		DFB74AFB18F92F45005ECF4C /* ZYRTCMediaEngineAPI.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFB74AFA18F92F45005ECF4C /* ZYRTCMediaEngineAPI.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AAB1BD818E50D8000613F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB1BAA18E50D8000613F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AAB1BB118E50D8000613F3A;
+			remoteInfo = ZYWebRTCDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A4F55D218ED5F7100AF3C63 /* libgflags.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgflags.a; sourceTree = "<group>"; };
+		3A4F55D418ED5FCD00AF3C63 /* libgmock_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmock_main.a; sourceTree = "<group>"; };
+		3A4F55D518ED5FCD00AF3C63 /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmock.a; sourceTree = "<group>"; };
+		3A4F55D818ED602A00AF3C63 /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest_main.a; sourceTree = "<group>"; };
+		3A4F55D918ED602A00AF3C63 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgtest.a; sourceTree = "<group>"; };
+		3AAB1BB218E50D8000613F3A /* ZYWebRTCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYWebRTCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAB1BB518E50D8000613F3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3AAB1BB718E50D8000613F3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3AAB1BB918E50D8000613F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3AAB1BBD18E50D8000613F3A /* ZYWebRTCDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZYWebRTCDemo-Info.plist"; sourceTree = "<group>"; };
+		3AAB1BBF18E50D8000613F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3AAB1BC118E50D8000613F3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AAB1BC318E50D8000613F3A /* ZYWebRTCDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYWebRTCDemo-Prefix.pch"; sourceTree = "<group>"; };
+		3AAB1BC418E50D8000613F3A /* ZYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAppDelegate.h; sourceTree = "<group>"; };
+		3AAB1BC518E50D8000613F3A /* ZYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAppDelegate.m; sourceTree = "<group>"; };
+		3AAB1BC818E50D8000613F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AAB1BCA18E50D8000613F3A /* ZYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
+		3AAB1BCB18E50D8000613F3A /* ZYViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYViewController.mm; sourceTree = "<group>"; };
+		3AAB1BCD18E50D8000613F3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3AAB1BD318E50D8000613F3A /* ZYWebRTCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYWebRTCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAB1BD418E50D8000613F3A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3AAB1BDC18E50D8000613F3A /* ZYWebRTCDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZYWebRTCDemoTests-Info.plist"; sourceTree = "<group>"; };
+		3AAB1BDE18E50D8000613F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3AAB1BE018E50D8000613F3A /* ZYWebRTCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYWebRTCDemoTests.m; sourceTree = "<group>"; };
+		3AAB1C8018E50E6E00613F3A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3AAB1C8218E50E7700613F3A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		3AAB1C8418E50E8000613F3A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3AAB1C8618E50E8800613F3A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3AAB1C8818E50EA200613F3A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3AAB1C8A18E50EAA00613F3A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		3AAB1C8C18E50EB300613F3A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3AAB1C8E18E50EBE00613F3A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3AAB1C9018E50ECE00613F3A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3AAB1C9218E50ED600613F3A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3AAB1C9418E50EDF00613F3A /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		3AAB1C9618E50EE500613F3A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		3AAB1C9818E50EEE00613F3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3AAB1C9A18E50EF600613F3A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3AAB1C9C18E50F0000613F3A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3AAB1C9E18E50F0600613F3A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3ADA5CC318F54EAA009CD014 /* libjingle_peerconnection_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjingle_peerconnection_objc.a; path = ../libjingle_peerconnection_objc.a; sourceTree = "<group>"; };
+		3AF7512318ED5D2D00D56ED8 /* libchannel_transport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libchannel_transport.a; sourceTree = "<group>"; };
+		3AF7512518ED5D9A00D56ED8 /* libtest_support.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtest_support.a; sourceTree = "<group>"; };
+		3AF7512718ED5DAF00D56ED8 /* libtest_support_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtest_support_main.a; sourceTree = "<group>"; };
+		3AF81FE318EC07DE00541959 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DF48E46718EC69C0005215F3 /* libacm2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libacm2.a; sourceTree = "<group>"; };
+		DF48E46818EC69C0005215F3 /* libaudio_coding_module.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaudio_coding_module.a; sourceTree = "<group>"; };
+		DF48E46918EC69C0005215F3 /* libaudio_conference_mixer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaudio_conference_mixer.a; sourceTree = "<group>"; };
+		DF48E46A18EC69C0005215F3 /* libaudio_device.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaudio_device.a; sourceTree = "<group>"; };
+		DF48E46B18EC69C0005215F3 /* libaudio_processing_neon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaudio_processing_neon.a; sourceTree = "<group>"; };
+		DF48E46C18EC69C0005215F3 /* libaudio_processing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaudio_processing.a; sourceTree = "<group>"; };
+		DF48E46D18EC69C0005215F3 /* libbitrate_controller.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbitrate_controller.a; sourceTree = "<group>"; };
+		DF48E46E18EC69C0005215F3 /* libCNG.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCNG.a; sourceTree = "<group>"; };
+		DF48E46F18EC69C0005215F3 /* libcommon_audio_neon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcommon_audio_neon.a; sourceTree = "<group>"; };
+		DF48E47018EC69C0005215F3 /* libcommon_audio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcommon_audio.a; sourceTree = "<group>"; };
+		DF48E47118EC69C0005215F3 /* libcommon_video.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcommon_video.a; sourceTree = "<group>"; };
+		DF48E47218EC69C0005215F3 /* libcrnspr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrnspr.a; sourceTree = "<group>"; };
+		DF48E47318EC69C0005215F3 /* libcrnss.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrnss.a; sourceTree = "<group>"; };
+		DF48E47418EC69C0005215F3 /* libcrnssckbi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrnssckbi.a; sourceTree = "<group>"; };
+		DF48E47518EC69C0005215F3 /* libcrssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrssl.a; sourceTree = "<group>"; };
+		DF48E47618EC69C0005215F3 /* libexpat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexpat.a; sourceTree = "<group>"; };
+		DF48E47718EC69C0005215F3 /* libG711.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libG711.a; sourceTree = "<group>"; };
+		DF48E47818EC69C0005215F3 /* libG722.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libG722.a; sourceTree = "<group>"; };
+		DF48E47918EC69C0005215F3 /* libicudata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicudata.a; sourceTree = "<group>"; };
+		DF48E47A18EC69C0005215F3 /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicui18n.a; sourceTree = "<group>"; };
+		DF48E47B18EC69C0005215F3 /* libicuuc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libicuuc.a; sourceTree = "<group>"; };
+		DF48E47C18EC69C0005215F3 /* libiLBC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiLBC.a; sourceTree = "<group>"; };
+		DF48E47D18EC69C0005215F3 /* libisac_neon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libisac_neon.a; sourceTree = "<group>"; };
+		DF48E47E18EC69C0005215F3 /* libiSAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiSAC.a; sourceTree = "<group>"; };
+		DF48E47F18EC69C0005215F3 /* libiSACFix.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiSACFix.a; sourceTree = "<group>"; };
+		DF48E48018EC69C0005215F3 /* libjingle_media.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjingle_media.a; sourceTree = "<group>"; };
+		DF48E48118EC69C0005215F3 /* libjingle_p2p.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjingle_p2p.a; sourceTree = "<group>"; };
+		DF48E48318EC69C0005215F3 /* libjingle_peerconnection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjingle_peerconnection.a; sourceTree = "<group>"; };
+		DF48E48418EC69C0005215F3 /* libjingle_sound.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjingle_sound.a; sourceTree = "<group>"; };
+		DF48E48518EC69C0005215F3 /* libjingle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjingle.a; sourceTree = "<group>"; };
+		DF48E48618EC69C0005215F3 /* libjsoncpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjsoncpp.a; sourceTree = "<group>"; };
+		DF48E48718EC69C0005215F3 /* libmedia_file.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmedia_file.a; sourceTree = "<group>"; };
+		DF48E48818EC69C0005215F3 /* libNetEq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNetEq.a; sourceTree = "<group>"; };
+		DF48E48918EC69C0005215F3 /* libNetEq4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNetEq4.a; sourceTree = "<group>"; };
+		DF48E48A18EC69C1005215F3 /* libnss_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnss_static.a; sourceTree = "<group>"; };
+		DF48E48B18EC69C1005215F3 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		DF48E48C18EC69C1005215F3 /* libpaced_sender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpaced_sender.a; sourceTree = "<group>"; };
+		DF48E48D18EC69C1005215F3 /* libPCM16B.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPCM16B.a; sourceTree = "<group>"; };
+		DF48E48E18EC69C1005215F3 /* librbe_components.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librbe_components.a; sourceTree = "<group>"; };
+		DF48E48F18EC69C1005215F3 /* libremote_bitrate_estimator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libremote_bitrate_estimator.a; sourceTree = "<group>"; };
+		DF48E49018EC69C1005215F3 /* librtp_rtcp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librtp_rtcp.a; sourceTree = "<group>"; };
+		DF48E49118EC69C1005215F3 /* libsqlite_regexp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlite_regexp.a; sourceTree = "<group>"; };
+		DF48E49218EC69C1005215F3 /* libsrtp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsrtp.a; sourceTree = "<group>"; };
+		DF48E49318EC69C1005215F3 /* libsystem_wrappers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsystem_wrappers.a; sourceTree = "<group>"; };
+		DF48E49418EC69C1005215F3 /* libvideo_capture_module.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvideo_capture_module.a; sourceTree = "<group>"; };
+		DF48E49518EC69C1005215F3 /* libvideo_coding_utility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvideo_coding_utility.a; sourceTree = "<group>"; };
+		DF48E49618EC69C1005215F3 /* libvideo_engine_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvideo_engine_core.a; sourceTree = "<group>"; };
+		DF48E49718EC69C1005215F3 /* libvideo_processing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvideo_processing.a; sourceTree = "<group>"; };
+		DF48E49818EC69C1005215F3 /* libvideo_render_module.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvideo_render_module.a; sourceTree = "<group>"; };
+		DF48E49918EC69C1005215F3 /* libvoice_engine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvoice_engine.a; sourceTree = "<group>"; };
+		DF48E49A18EC69C1005215F3 /* libvpx_asm_offsets_vp8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvpx_asm_offsets_vp8.a; sourceTree = "<group>"; };
+		DF48E49B18EC69C1005215F3 /* libvpx_asm_offsets_vpx_scale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvpx_asm_offsets_vpx_scale.a; sourceTree = "<group>"; };
+		DF48E49C18EC69C1005215F3 /* libvpx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvpx.a; sourceTree = "<group>"; };
+		DF48E49D18EC69C1005215F3 /* libwebrtc_i420.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebrtc_i420.a; sourceTree = "<group>"; };
+		DF48E49E18EC69C1005215F3 /* libwebrtc_opus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebrtc_opus.a; sourceTree = "<group>"; };
+		DF48E49F18EC69C1005215F3 /* libwebrtc_utility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebrtc_utility.a; sourceTree = "<group>"; };
+		DF48E4A018EC69C1005215F3 /* libwebrtc_video_coding.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebrtc_video_coding.a; sourceTree = "<group>"; };
+		DF48E4A118EC69C1005215F3 /* libwebrtc_vp8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebrtc_vp8.a; sourceTree = "<group>"; };
+		DF48E4A218EC69C1005215F3 /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
+		DFB74AF618F902A4005ECF4C /* webrtc_native_api.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = webrtc_native_api.mm; sourceTree = "<group>"; };
+		DFB74AF718F902A4005ECF4C /* webrtc_native_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webrtc_native_api.h; sourceTree = "<group>"; };
+		DFB74AF918F92F45005ECF4C /* ZYRTCMediaEngineAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRTCMediaEngineAPI.h; sourceTree = "<group>"; };
+		DFB74AFA18F92F45005ECF4C /* ZYRTCMediaEngineAPI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZYRTCMediaEngineAPI.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AAB1BAF18E50D8000613F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF48E4C618EC69C1005215F3 /* libnss_static.a in Frameworks */,
+				DF48E4A618EC69C1005215F3 /* libaudio_device.a in Frameworks */,
+				DF48E4DE18EC69C1005215F3 /* libyuv.a in Frameworks */,
+				DF48E4D718EC69C1005215F3 /* libvpx_asm_offsets_vpx_scale.a in Frameworks */,
+				DF48E4B118EC69C1005215F3 /* libcrssl.a in Frameworks */,
+				3AF81FE418EC07DE00541959 /* libz.dylib in Frameworks */,
+				3AAB1C9F18E50F0600613F3A /* CoreData.framework in Frameworks */,
+				3AAB1C9D18E50F0000613F3A /* CFNetwork.framework in Frameworks */,
+				DF48E4DA18EC69C1005215F3 /* libwebrtc_opus.a in Frameworks */,
+				3AAB1C9B18E50EF600613F3A /* SystemConfiguration.framework in Frameworks */,
+				DF48E4D218EC69C1005215F3 /* libvideo_engine_core.a in Frameworks */,
+				DF48E4B318EC69C1005215F3 /* libG711.a in Frameworks */,
+				DF48E4BA18EC69C1005215F3 /* libiSAC.a in Frameworks */,
+				DF48E4BF18EC69C1005215F3 /* libjingle_peerconnection.a in Frameworks */,
+				DF48E4A518EC69C1005215F3 /* libaudio_conference_mixer.a in Frameworks */,
+				3AAB1C9918E50EEE00613F3A /* Security.framework in Frameworks */,
+				3A4F55D318ED5F7100AF3C63 /* libgflags.a in Frameworks */,
+				DF48E4A318EC69C1005215F3 /* libacm2.a in Frameworks */,
+				DF48E4C418EC69C1005215F3 /* libNetEq.a in Frameworks */,
+				DF48E4DC18EC69C1005215F3 /* libwebrtc_video_coding.a in Frameworks */,
+				3AF7512818ED5DAF00D56ED8 /* libtest_support_main.a in Frameworks */,
+				DF48E4D118EC69C1005215F3 /* libvideo_coding_utility.a in Frameworks */,
+				DF48E4D818EC69C1005215F3 /* libvpx.a in Frameworks */,
+				3AAB1C9718E50EE500613F3A /* libxml2.dylib in Frameworks */,
+				DF48E4D318EC69C1005215F3 /* libvideo_processing.a in Frameworks */,
+				DF48E4D518EC69C1005215F3 /* libvoice_engine.a in Frameworks */,
+				DF48E4AE18EC69C1005215F3 /* libcrnspr.a in Frameworks */,
+				DF48E4BC18EC69C1005215F3 /* libjingle_media.a in Frameworks */,
+				3AAB1C9518E50EDF00613F3A /* libresolv.dylib in Frameworks */,
+				DF48E4BD18EC69C1005215F3 /* libjingle_p2p.a in Frameworks */,
+				DF48E4B518EC69C1005215F3 /* libicudata.a in Frameworks */,
+				3A4F55D618ED5FCD00AF3C63 /* libgmock_main.a in Frameworks */,
+				3AAB1C9318E50ED600613F3A /* CoreLocation.framework in Frameworks */,
+				DF48E4B018EC69C1005215F3 /* libcrnssckbi.a in Frameworks */,
+				DF48E4C718EC69C1005215F3 /* libopus.a in Frameworks */,
+				DF48E4CE18EC69C1005215F3 /* libsrtp.a in Frameworks */,
+				3AAB1C9118E50ECE00613F3A /* QuartzCore.framework in Frameworks */,
+				DF48E4B818EC69C1005215F3 /* libiLBC.a in Frameworks */,
+				DF48E4C318EC69C1005215F3 /* libmedia_file.a in Frameworks */,
+				DF48E4C118EC69C1005215F3 /* libjingle.a in Frameworks */,
+				DF48E4AF18EC69C1005215F3 /* libcrnss.a in Frameworks */,
+				3A4F55DA18ED602A00AF3C63 /* libgtest_main.a in Frameworks */,
+				3AAB1C8F18E50EBE00613F3A /* OpenGLES.framework in Frameworks */,
+				DF48E4AD18EC69C1005215F3 /* libcommon_video.a in Frameworks */,
+				DF48E4D418EC69C1005215F3 /* libvideo_render_module.a in Frameworks */,
+				DF48E4C918EC69C1005215F3 /* libPCM16B.a in Frameworks */,
+				3AF7512418ED5D2D00D56ED8 /* libchannel_transport.a in Frameworks */,
+				DF48E4A718EC69C1005215F3 /* libaudio_processing_neon.a in Frameworks */,
+				DF48E4AB18EC69C1005215F3 /* libcommon_audio_neon.a in Frameworks */,
+				DF48E4C018EC69C1005215F3 /* libjingle_sound.a in Frameworks */,
+				DF48E4B918EC69C1005215F3 /* libisac_neon.a in Frameworks */,
+				3A4F55D718ED5FCD00AF3C63 /* libgmock.a in Frameworks */,
+				DF48E4CB18EC69C1005215F3 /* libremote_bitrate_estimator.a in Frameworks */,
+				3AAB1C8D18E50EB300613F3A /* AudioToolbox.framework in Frameworks */,
+				3AAB1C8B18E50EAA00613F3A /* CoreAudio.framework in Frameworks */,
+				DF48E4DB18EC69C1005215F3 /* libwebrtc_utility.a in Frameworks */,
+				DF48E4B418EC69C1005215F3 /* libG722.a in Frameworks */,
+				3AAB1C8918E50EA200613F3A /* CoreMedia.framework in Frameworks */,
+				3AAB1C8718E50E8800613F3A /* CoreVideo.framework in Frameworks */,
+				DF48E4DD18EC69C1005215F3 /* libwebrtc_vp8.a in Frameworks */,
+				DF48E4B718EC69C1005215F3 /* libicuuc.a in Frameworks */,
+				DF48E4B618EC69C1005215F3 /* libicui18n.a in Frameworks */,
+				DF48E4CA18EC69C1005215F3 /* librbe_components.a in Frameworks */,
+				DF48E4C818EC69C1005215F3 /* libpaced_sender.a in Frameworks */,
+				DF48E4AA18EC69C1005215F3 /* libCNG.a in Frameworks */,
+				DF48E4C218EC69C1005215F3 /* libjsoncpp.a in Frameworks */,
+				3AAB1C8518E50E8000613F3A /* libsqlite3.dylib in Frameworks */,
+				DF48E4CC18EC69C1005215F3 /* librtp_rtcp.a in Frameworks */,
+				DF48E4A818EC69C1005215F3 /* libaudio_processing.a in Frameworks */,
+				3AAB1C8318E50E7700613F3A /* libstdc++.dylib in Frameworks */,
+				3AAB1C8118E50E6E00613F3A /* AVFoundation.framework in Frameworks */,
+				DF48E4A418EC69C1005215F3 /* libaudio_coding_module.a in Frameworks */,
+				DF48E4A918EC69C1005215F3 /* libbitrate_controller.a in Frameworks */,
+				3AAB1BB818E50D8000613F3A /* CoreGraphics.framework in Frameworks */,
+				DF48E4BB18EC69C1005215F3 /* libiSACFix.a in Frameworks */,
+				3AAB1BBA18E50D8000613F3A /* UIKit.framework in Frameworks */,
+				DF48E4CD18EC69C1005215F3 /* libsqlite_regexp.a in Frameworks */,
+				3AAB1BB618E50D8000613F3A /* Foundation.framework in Frameworks */,
+				DF48E4D618EC69C1005215F3 /* libvpx_asm_offsets_vp8.a in Frameworks */,
+				3AF7512618ED5D9A00D56ED8 /* libtest_support.a in Frameworks */,
+				DF48E4B218EC69C1005215F3 /* libexpat.a in Frameworks */,
+				DF48E4D018EC69C1005215F3 /* libvideo_capture_module.a in Frameworks */,
+				3ADA5CC418F54EAA009CD014 /* libjingle_peerconnection_objc.a in Frameworks */,
+				DF48E4AC18EC69C1005215F3 /* libcommon_audio.a in Frameworks */,
+				DF48E4D918EC69C1005215F3 /* libwebrtc_i420.a in Frameworks */,
+				DF48E4C518EC69C1005215F3 /* libNetEq4.a in Frameworks */,
+				DF48E4CF18EC69C1005215F3 /* libsystem_wrappers.a in Frameworks */,
+				3A4F55DB18ED602A00AF3C63 /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AAB1BD018E50D8000613F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AAB1BD518E50D8000613F3A /* XCTest.framework in Frameworks */,
+				3AAB1BD718E50D8000613F3A /* UIKit.framework in Frameworks */,
+				3AAB1BD618E50D8000613F3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A6AB46A18E962C700BEC410 /* RTCFramework */ = {
+			isa = PBXGroup;
+			children = (
+				3A4F55D818ED602A00AF3C63 /* libgtest_main.a */,
+				3A4F55D918ED602A00AF3C63 /* libgtest.a */,
+				3A4F55D418ED5FCD00AF3C63 /* libgmock_main.a */,
+				3A4F55D518ED5FCD00AF3C63 /* libgmock.a */,
+				3A4F55D218ED5F7100AF3C63 /* libgflags.a */,
+				3AF7512718ED5DAF00D56ED8 /* libtest_support_main.a */,
+				3AF7512518ED5D9A00D56ED8 /* libtest_support.a */,
+				3AF7512318ED5D2D00D56ED8 /* libchannel_transport.a */,
+				DF48E46718EC69C0005215F3 /* libacm2.a */,
+				DF48E46818EC69C0005215F3 /* libaudio_coding_module.a */,
+				DF48E46918EC69C0005215F3 /* libaudio_conference_mixer.a */,
+				DF48E46A18EC69C0005215F3 /* libaudio_device.a */,
+				DF48E46B18EC69C0005215F3 /* libaudio_processing_neon.a */,
+				DF48E46C18EC69C0005215F3 /* libaudio_processing.a */,
+				DF48E46D18EC69C0005215F3 /* libbitrate_controller.a */,
+				DF48E46E18EC69C0005215F3 /* libCNG.a */,
+				DF48E46F18EC69C0005215F3 /* libcommon_audio_neon.a */,
+				3ADA5CC318F54EAA009CD014 /* libjingle_peerconnection_objc.a */,
+				DF48E47018EC69C0005215F3 /* libcommon_audio.a */,
+				DF48E47118EC69C0005215F3 /* libcommon_video.a */,
+				DF48E47218EC69C0005215F3 /* libcrnspr.a */,
+				DF48E47318EC69C0005215F3 /* libcrnss.a */,
+				DF48E47418EC69C0005215F3 /* libcrnssckbi.a */,
+				DF48E47518EC69C0005215F3 /* libcrssl.a */,
+				DF48E47618EC69C0005215F3 /* libexpat.a */,
+				DF48E47718EC69C0005215F3 /* libG711.a */,
+				DF48E47818EC69C0005215F3 /* libG722.a */,
+				DF48E47918EC69C0005215F3 /* libicudata.a */,
+				DF48E47A18EC69C0005215F3 /* libicui18n.a */,
+				DF48E47B18EC69C0005215F3 /* libicuuc.a */,
+				DF48E47C18EC69C0005215F3 /* libiLBC.a */,
+				DF48E47D18EC69C0005215F3 /* libisac_neon.a */,
+				DF48E47E18EC69C0005215F3 /* libiSAC.a */,
+				DF48E47F18EC69C0005215F3 /* libiSACFix.a */,
+				DF48E48018EC69C0005215F3 /* libjingle_media.a */,
+				DF48E48118EC69C0005215F3 /* libjingle_p2p.a */,
+				DF48E48318EC69C0005215F3 /* libjingle_peerconnection.a */,
+				DF48E48418EC69C0005215F3 /* libjingle_sound.a */,
+				DF48E48518EC69C0005215F3 /* libjingle.a */,
+				DF48E48618EC69C0005215F3 /* libjsoncpp.a */,
+				DF48E48718EC69C0005215F3 /* libmedia_file.a */,
+				DF48E48818EC69C0005215F3 /* libNetEq.a */,
+				DF48E48918EC69C0005215F3 /* libNetEq4.a */,
+				DF48E48A18EC69C1005215F3 /* libnss_static.a */,
+				DF48E48B18EC69C1005215F3 /* libopus.a */,
+				DF48E48C18EC69C1005215F3 /* libpaced_sender.a */,
+				DF48E48D18EC69C1005215F3 /* libPCM16B.a */,
+				DF48E48E18EC69C1005215F3 /* librbe_components.a */,
+				DF48E48F18EC69C1005215F3 /* libremote_bitrate_estimator.a */,
+				DF48E49018EC69C1005215F3 /* librtp_rtcp.a */,
+				DF48E49118EC69C1005215F3 /* libsqlite_regexp.a */,
+				DF48E49218EC69C1005215F3 /* libsrtp.a */,
+				DF48E49318EC69C1005215F3 /* libsystem_wrappers.a */,
+				DF48E49418EC69C1005215F3 /* libvideo_capture_module.a */,
+				DF48E49518EC69C1005215F3 /* libvideo_coding_utility.a */,
+				DF48E49618EC69C1005215F3 /* libvideo_engine_core.a */,
+				DF48E49718EC69C1005215F3 /* libvideo_processing.a */,
+				DF48E49818EC69C1005215F3 /* libvideo_render_module.a */,
+				DF48E49918EC69C1005215F3 /* libvoice_engine.a */,
+				DF48E49A18EC69C1005215F3 /* libvpx_asm_offsets_vp8.a */,
+				DF48E49B18EC69C1005215F3 /* libvpx_asm_offsets_vpx_scale.a */,
+				DF48E49C18EC69C1005215F3 /* libvpx.a */,
+				DF48E49D18EC69C1005215F3 /* libwebrtc_i420.a */,
+				DF48E49E18EC69C1005215F3 /* libwebrtc_opus.a */,
+				DF48E49F18EC69C1005215F3 /* libwebrtc_utility.a */,
+				DF48E4A018EC69C1005215F3 /* libwebrtc_video_coding.a */,
+				DF48E4A118EC69C1005215F3 /* libwebrtc_vp8.a */,
+				DF48E4A218EC69C1005215F3 /* libyuv.a */,
+			);
+			path = RTCFramework;
+			sourceTree = "<group>";
+		};
+		3AAB1BA918E50D7F00613F3A = {
+			isa = PBXGroup;
+			children = (
+				DFB74AF518F90229005ECF4C /* RTCWorker */,
+				3A6AB46A18E962C700BEC410 /* RTCFramework */,
+				3AAB1BBB18E50D8000613F3A /* ZYWebRTCDemo */,
+				3AAB1BDA18E50D8000613F3A /* ZYWebRTCDemoTests */,
+				3AAB1BB418E50D8000613F3A /* Frameworks */,
+				3AAB1BB318E50D8000613F3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AAB1BB318E50D8000613F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AAB1BB218E50D8000613F3A /* ZYWebRTCDemo.app */,
+				3AAB1BD318E50D8000613F3A /* ZYWebRTCDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AAB1BB418E50D8000613F3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AF81FE318EC07DE00541959 /* libz.dylib */,
+				3AAB1C9E18E50F0600613F3A /* CoreData.framework */,
+				3AAB1C9C18E50F0000613F3A /* CFNetwork.framework */,
+				3AAB1C9A18E50EF600613F3A /* SystemConfiguration.framework */,
+				3AAB1C9818E50EEE00613F3A /* Security.framework */,
+				3AAB1C9618E50EE500613F3A /* libxml2.dylib */,
+				3AAB1C9418E50EDF00613F3A /* libresolv.dylib */,
+				3AAB1C9218E50ED600613F3A /* CoreLocation.framework */,
+				3AAB1C9018E50ECE00613F3A /* QuartzCore.framework */,
+				3AAB1C8E18E50EBE00613F3A /* OpenGLES.framework */,
+				3AAB1C8C18E50EB300613F3A /* AudioToolbox.framework */,
+				3AAB1C8A18E50EAA00613F3A /* CoreAudio.framework */,
+				3AAB1C8818E50EA200613F3A /* CoreMedia.framework */,
+				3AAB1C8618E50E8800613F3A /* CoreVideo.framework */,
+				3AAB1C8418E50E8000613F3A /* libsqlite3.dylib */,
+				3AAB1C8218E50E7700613F3A /* libstdc++.dylib */,
+				3AAB1C8018E50E6E00613F3A /* AVFoundation.framework */,
+				3AAB1BB518E50D8000613F3A /* Foundation.framework */,
+				3AAB1BB718E50D8000613F3A /* CoreGraphics.framework */,
+				3AAB1BB918E50D8000613F3A /* UIKit.framework */,
+				3AAB1BD418E50D8000613F3A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AAB1BBB18E50D8000613F3A /* ZYWebRTCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3AAB1BC418E50D8000613F3A /* ZYAppDelegate.h */,
+				3AAB1BC518E50D8000613F3A /* ZYAppDelegate.m */,
+				3AAB1BC718E50D8000613F3A /* Main.storyboard */,
+				3AAB1BCA18E50D8000613F3A /* ZYViewController.h */,
+				3AAB1BCB18E50D8000613F3A /* ZYViewController.mm */,
+				3AAB1BCD18E50D8000613F3A /* Images.xcassets */,
+				3AAB1BBC18E50D8000613F3A /* Supporting Files */,
+			);
+			path = ZYWebRTCDemo;
+			sourceTree = "<group>";
+		};
+		3AAB1BBC18E50D8000613F3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AAB1BBD18E50D8000613F3A /* ZYWebRTCDemo-Info.plist */,
+				3AAB1BBE18E50D8000613F3A /* InfoPlist.strings */,
+				3AAB1BC118E50D8000613F3A /* main.m */,
+				3AAB1BC318E50D8000613F3A /* ZYWebRTCDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AAB1BDA18E50D8000613F3A /* ZYWebRTCDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AAB1BE018E50D8000613F3A /* ZYWebRTCDemoTests.m */,
+				3AAB1BDB18E50D8000613F3A /* Supporting Files */,
+			);
+			path = ZYWebRTCDemoTests;
+			sourceTree = "<group>";
+		};
+		3AAB1BDB18E50D8000613F3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AAB1BDC18E50D8000613F3A /* ZYWebRTCDemoTests-Info.plist */,
+				3AAB1BDD18E50D8000613F3A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB74AF518F90229005ECF4C /* RTCWorker */ = {
+			isa = PBXGroup;
+			children = (
+				DFB74AF718F902A4005ECF4C /* webrtc_native_api.h */,
+				DFB74AF618F902A4005ECF4C /* webrtc_native_api.mm */,
+				DFB74AF918F92F45005ECF4C /* ZYRTCMediaEngineAPI.h */,
+				DFB74AFA18F92F45005ECF4C /* ZYRTCMediaEngineAPI.mm */,
+			);
+			path = RTCWorker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AAB1BB118E50D8000613F3A /* ZYWebRTCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AAB1BE418E50D8000613F3A /* Build configuration list for PBXNativeTarget "ZYWebRTCDemo" */;
+			buildPhases = (
+				3AAB1BAE18E50D8000613F3A /* Sources */,
+				3AAB1BAF18E50D8000613F3A /* Frameworks */,
+				3AAB1BB018E50D8000613F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYWebRTCDemo;
+			productName = ZYWebRTCDemo;
+			productReference = 3AAB1BB218E50D8000613F3A /* ZYWebRTCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AAB1BD218E50D8000613F3A /* ZYWebRTCDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AAB1BE718E50D8000613F3A /* Build configuration list for PBXNativeTarget "ZYWebRTCDemoTests" */;
+			buildPhases = (
+				3AAB1BCF18E50D8000613F3A /* Sources */,
+				3AAB1BD018E50D8000613F3A /* Frameworks */,
+				3AAB1BD118E50D8000613F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AAB1BD918E50D8000613F3A /* PBXTargetDependency */,
+			);
+			name = ZYWebRTCDemoTests;
+			productName = ZYWebRTCDemoTests;
+			productReference = 3AAB1BD318E50D8000613F3A /* ZYWebRTCDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AAB1BAA18E50D8000613F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZY;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SMIT;
+				TargetAttributes = {
+					3AAB1BD218E50D8000613F3A = {
+						TestTargetID = 3AAB1BB118E50D8000613F3A;
+					};
+				};
+			};
+			buildConfigurationList = 3AAB1BAD18E50D8000613F3A /* Build configuration list for PBXProject "ZYWebRTCDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AAB1BA918E50D7F00613F3A;
+			productRefGroup = 3AAB1BB318E50D8000613F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AAB1BB118E50D8000613F3A /* ZYWebRTCDemo */,
+				3AAB1BD218E50D8000613F3A /* ZYWebRTCDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AAB1BB018E50D8000613F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AAB1BCE18E50D8000613F3A /* Images.xcassets in Resources */,
+				3AAB1BC018E50D8000613F3A /* InfoPlist.strings in Resources */,
+				3AAB1BC918E50D8000613F3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AAB1BD118E50D8000613F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AAB1BDF18E50D8000613F3A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AAB1BAE18E50D8000613F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AAB1BC218E50D8000613F3A /* main.m in Sources */,
+				3AAB1BC618E50D8000613F3A /* ZYAppDelegate.m in Sources */,
+				3AAB1BCC18E50D8000613F3A /* ZYViewController.mm in Sources */,
+				DFB74AFB18F92F45005ECF4C /* ZYRTCMediaEngineAPI.mm in Sources */,
+				DFB74AF818F902A4005ECF4C /* webrtc_native_api.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AAB1BCF18E50D8000613F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AAB1BE118E50D8000613F3A /* ZYWebRTCDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AAB1BD918E50D8000613F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AAB1BB118E50D8000613F3A /* ZYWebRTCDemo */;
+			targetProxy = 3AAB1BD818E50D8000613F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AAB1BBE18E50D8000613F3A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AAB1BBF18E50D8000613F3A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3AAB1BC718E50D8000613F3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AAB1BC818E50D8000613F3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AAB1BDD18E50D8000613F3A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AAB1BDE18E50D8000613F3A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AAB1BE218E50D8000613F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		3AAB1BE318E50D8000613F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		3AAB1BE518E50D8000613F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZYWebRTCDemo/ZYWebRTCDemo-Prefix.pch";
+				INFOPLIST_FILE = "ZYWebRTCDemo/ZYWebRTCDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RTCFramework",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3AAB1BE618E50D8000613F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZYWebRTCDemo/ZYWebRTCDemo-Prefix.pch";
+				INFOPLIST_FILE = "ZYWebRTCDemo/ZYWebRTCDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RTCFramework",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3AAB1BE818E50D8000613F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZYWebRTCDemo.app/ZYWebRTCDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZYWebRTCDemo/ZYWebRTCDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZYWebRTCDemoTests/ZYWebRTCDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3AAB1BE918E50D8000613F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZYWebRTCDemo.app/ZYWebRTCDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZYWebRTCDemo/ZYWebRTCDemo-Prefix.pch";
+				INFOPLIST_FILE = "ZYWebRTCDemoTests/ZYWebRTCDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AAB1BAD18E50D8000613F3A /* Build configuration list for PBXProject "ZYWebRTCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AAB1BE218E50D8000613F3A /* Debug */,
+				3AAB1BE318E50D8000613F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AAB1BE418E50D8000613F3A /* Build configuration list for PBXNativeTarget "ZYWebRTCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AAB1BE518E50D8000613F3A /* Debug */,
+				3AAB1BE618E50D8000613F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AAB1BE718E50D8000613F3A /* Build configuration list for PBXNativeTarget "ZYWebRTCDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AAB1BE818E50D8000613F3A /* Debug */,
+				3AAB1BE918E50D8000613F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AAB1BAA18E50D8000613F3A /* Project object */;
+}

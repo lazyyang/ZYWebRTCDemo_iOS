@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96A8DFB41314904E2C1A6CA3 /* remote_rate_control.cc in Sources */ = {isa = PBXBuildFile; fileRef = 277D83E3E8EC3CC890794EED /* remote_rate_control.cc */; };
+		CFABCAE7BF3E54F05CCE714B /* overuse_detector.cc in Sources */ = {isa = PBXBuildFile; fileRef = F83EBDF166C02010B8929E0A /* overuse_detector.cc */; };
+		F10C9C0FEDEEA724A7AD041D /* remote_bitrate_estimator_single_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8D6514843D2BD102AD9C0515 /* remote_bitrate_estimator_single_stream.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		007389F677D23C4BFE42E40A /* remote_rate_control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = remote_rate_control.h; sourceTree = "<group>"; };
+		06B7B46284CA49A484CF342A /* common.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = common.gypi; path = ../../build/common.gypi; sourceTree = "<group>"; };
+		070D4CAFB5A4E22E865C9964 /* release.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release.gypi; path = ../../../build/release.gypi; sourceTree = "<group>"; };
+		277D83E3E8EC3CC890794EED /* remote_rate_control.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = remote_rate_control.cc; sourceTree = "<group>"; };
+		2DBC903AC2FF10B98B596C54 /* release_impl.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_impl.gypi; path = ../../../build/internal/release_impl.gypi; sourceTree = "<group>"; };
+		590DE45068C85D2A3A354F8F /* common.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = common.gypi; path = ../../../build/common.gypi; sourceTree = "<group>"; };
+		61DD25121769ED88899CEBA5 /* librbe_components.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librbe_components.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6514843D2BD102AD9C0515 /* remote_bitrate_estimator_single_stream.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = remote_bitrate_estimator_single_stream.cc; sourceTree = "<group>"; };
+		96B4067F93C2961BEF2DD454 /* release_impl_official.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_impl_official.gypi; path = ../../../build/internal/release_impl_official.gypi; sourceTree = "<group>"; };
+		A3771D0E78D6EE39C99E4B72 /* release_defaults.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = release_defaults.gypi; path = ../../../build/internal/release_defaults.gypi; sourceTree = "<group>"; };
+		AAA79554DEC4643028D54602 /* supplement.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = supplement.gypi; path = ../../supplement.gypi; sourceTree = "<group>"; };
+		B64D0345667FD5F2FCB8E915 /* overuse_detector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = overuse_detector.h; sourceTree = "<group>"; };
+		DABA9C5903B3AFCDB6470088 /* filename_rules.gypi */ = {isa = PBXFileReference; lastKnownFileType = text; name = filename_rules.gypi; path = ../../../build/filename_rules.gypi; sourceTree = "<group>"; };
+		EE47E46780AB10EA7BD8A5FE /* remote_bitrate_estimator_components.gyp */ = {isa = PBXFileReference; lastKnownFileType = text; path = remote_bitrate_estimator_components.gyp; sourceTree = "<group>"; };
+		F83EBDF166C02010B8929E0A /* overuse_detector.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = overuse_detector.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C488FB31A7C5FD961306F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C70F4C72807C36DB570833D /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				590DE45068C85D2A3A354F8F /* common.gypi */,
+				06B7B46284CA49A484CF342A /* common.gypi */,
+				DABA9C5903B3AFCDB6470088 /* filename_rules.gypi */,
+				070D4CAFB5A4E22E865C9964 /* release.gypi */,
+				A3771D0E78D6EE39C99E4B72 /* release_defaults.gypi */,
+				2DBC903AC2FF10B98B596C54 /* release_impl.gypi */,
+				96B4067F93C2961BEF2DD454 /* release_impl_official.gypi */,
+				EE47E46780AB10EA7BD8A5FE /* remote_bitrate_estimator_components.gyp */,
+				AAA79554DEC4643028D54602 /* supplement.gypi */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		6B22BAFA506203BB0925CE30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61DD25121769ED88899CEBA5 /* librbe_components.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85663115967F96ED5219A0E2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F83EBDF166C02010B8929E0A /* overuse_detector.cc */,
+				B64D0345667FD5F2FCB8E915 /* overuse_detector.h */,
+				8D6514843D2BD102AD9C0515 /* remote_bitrate_estimator_single_stream.cc */,
+				277D83E3E8EC3CC890794EED /* remote_rate_control.cc */,
+				007389F677D23C4BFE42E40A /* remote_rate_control.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A48DC4CE92B7BABA5B9F902D = {
+			isa = PBXGroup;
+			children = (
+				85663115967F96ED5219A0E2 /* Source */,
+				6B22BAFA506203BB0925CE30 /* Products */,
+				2C70F4C72807C36DB570833D /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BA81E870F086FBC199E2414 /* rbe_components */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4983F5DDC6CA91B9C280C097 /* Build configuration list for PBXNativeTarget "rbe_components" */;
+			buildPhases = (
+				935714BDFD7D2E5FAC1717D2 /* Sources */,
+				85C488FB31A7C5FD961306F8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rbe_components;
+			productName = rbe_components;
+			productReference = 61DD25121769ED88899CEBA5 /* librbe_components.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA1E9CA9EEF69A4E73F7E4E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 785188A61FCAE25327BF045F /* Build configuration list for PBXProject "remote_bitrate_estimator_components" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = A48DC4CE92B7BABA5B9F902D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BA81E870F086FBC199E2414 /* rbe_components */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		935714BDFD7D2E5FAC1717D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFABCAE7BF3E54F05CCE714B /* overuse_detector.cc in Sources */,
+				F10C9C0FEDEEA724A7AD041D /* remote_bitrate_estimator_single_stream.cc in Sources */,
+				96A8DFB41314904E2C1A6CA3 /* remote_rate_control.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		24B597DB2970EAE86D7FFB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = ../../../xcodebuild;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F80A8842ED068DABEEA5E6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SDKROOT = iphoneos;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = ../../../xcodebuild;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 i386";
+			};
+			name = Release;
+		};
+		98BC3BE84E328FE68BA1DA7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					ANGLE_DX11,
+					"WEBRTC_SVNREVISION=\\\"Unavailable(issue687)\\\"",
+					DISABLE_NACL,
+					CHROMIUM_BUILD,
+					"USE_LIBJPEG_TURBO=1",
+					ENABLE_INPUT_SPEECH,
+					"ENABLE_EGLIMAGE=1",
+					"CLD_VERSION=1",
+					"ENABLE_SPELLCHECK=1",
+					"DISABLE_FTP_SUPPORT=1",
+					WEBRTC_LOGGING,
+					WEBRTC_ARCH_ARM,
+					WEBRTC_ARCH_ARM_V7,
+					WEBRTC_ARCH_ARM_NEON,
+					WEBRTC_MAC,
+					WEBRTC_IOS,
+					__STDC_CONSTANT_MACROS,
+					__STDC_FORMAT_MACROS,
+					"DYNAMIC_ANNOTATIONS_ENABLED=1",
+					"WTF_USE_DYNAMIC_ANNOTATIONS=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				HEADER_SEARCH_PATHS = (
+					../..,
+					../../..,
+					../../..,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = rbe_components;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-missing-field-initializers",
+					"-Wheader-hygiene",
+					"-Wno-char-subscripts",
+					"-Wno-unused-function",
+					"-Wno-unnamed-type-template-args",
+					"-Wno-c++11-narrowing",
+				);
+			};
+			name = Debug;
+		};
+		A4700E85B36295CD2E9A9AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					ANGLE_DX11,
+					"WEBRTC_SVNREVISION=\\\"Unavailable(issue687)\\\"",
+					DISABLE_NACL,
+					CHROMIUM_BUILD,
+					"USE_LIBJPEG_TURBO=1",
+					ENABLE_INPUT_SPEECH,
+					"ENABLE_EGLIMAGE=1",
+					"CLD_VERSION=1",
+					"ENABLE_SPELLCHECK=1",
+					"DISABLE_FTP_SUPPORT=1",
+					WEBRTC_LOGGING,
+					WEBRTC_ARCH_ARM,
+					WEBRTC_ARCH_ARM_V7,
+					WEBRTC_ARCH_ARM_NEON,
+					WEBRTC_MAC,
+					WEBRTC_IOS,
+					__STDC_CONSTANT_MACROS,
+					__STDC_FORMAT_MACROS,
+					NDEBUG,
+					NVALGRIND,
+					"DYNAMIC_ANNOTATIONS_ENABLED=0",
+					"_FORTIFY_SOURCE=2",
+					"NS_BLOCK_ASSERTIONS=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				HEADER_SEARCH_PATHS = (
+					../..,
+					../../..,
+					../../..,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = rbe_components;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wendif-labels",
+					"-Wextra",
+					"-Wno-unused-parameter",
+					"-Wno-missing-field-initializers",
+					"-Wheader-hygiene",
+					"-Wno-char-subscripts",
+					"-Wno-unused-function",
+					"-Wno-unnamed-type-template-args",
+					"-Wno-c++11-narrowing",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4983F5DDC6CA91B9C280C097 /* Build configuration list for PBXNativeTarget "rbe_components" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98BC3BE84E328FE68BA1DA7A /* Debug */,
+				A4700E85B36295CD2E9A9AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		785188A61FCAE25327BF045F /* Build configuration list for PBXProject "remote_bitrate_estimator_components" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B597DB2970EAE86D7FFB3B /* Debug */,
+				3F80A8842ED068DABEEA5E6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA1E9CA9EEF69A4E73F7E4E1 /* Project object */;
+}
